@@ -136,17 +136,23 @@ service.register('hello', function (message) {
 
 We are now ready to package our app and test it on the target device. Create the package using the following command.
 
-<mark>ares-package app service</mark>
+```powershell
+ares-package app service
+```
 
 ## Installing and Launching the App
 
 Before installing the packaged app, you should run the webOS TV emulator first. Then, install the app on the target device using the ares-install command.
 
-<mark>ares-install com.yourdomain.helloworld_0.0.1_all.ipk</mark>
+```powershell
+ares-install com.yourdomain.helloworld_0.0.1_all.ipk
+```
 
 After you install the app, you can launch the app by selecting the app icon on the Launcher or executing the following command.
 
-<mark>ares-launch com.yourdomain.helloworld</mark>
+```powershell
+ares-launch com.yourdomain.helloworld
+```
 
 After the app is running, enter your name in the text box, then click the **CALL SERVICE** button. The app will call the service with the name entered as a parameter and return the "Hello" response.
 
